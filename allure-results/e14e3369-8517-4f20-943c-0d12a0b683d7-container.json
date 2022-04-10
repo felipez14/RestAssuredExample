@@ -1,0 +1,1 @@
+{"uuid":"e14e3369-8517-4f20-943c-0d12a0b683d7","name":"ServiceIntegration","children":[],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1637100269824,"stop":1637100269824}],"afters":[],"links":[],"start":1637100269824,"stop":1637100269825}

@@ -1,0 +1,1 @@
+{"uuid":"9d2ce051-d27b-48be-b88e-5be3b2bf6fe0","name":"Flow","children":["c0c6d6a6-0a92-4f52-9023-816c311e5597"],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1637100267586,"stop":1637100267586}],"afters":[],"links":[],"start":1637100267585,"stop":1637100269819}

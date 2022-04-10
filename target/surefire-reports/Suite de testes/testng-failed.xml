@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite de testes]">
+  <test thread-count="5" verbose="0" name="ContractRegistration(failed)">
+    <classes>
+      <class name="TestNG.ContractRegistration.JourneyController">
+        <methods>
+          <include name="create"/>
+          <include name="findById"/>
+          <include name="update"/>
+          <include name="findAll"/>
+          <include name="getData"/>
+          <include name="delete"/>
+        </methods>
+      </class> <!-- TestNG.ContractRegistration.JourneyController -->
+      <class name="TestNG.ContractRegistration.JourneyTypeController">
+        <methods>
+          <include name="update"/>
+          <include name="findById"/>
+          <include name="create"/>
+          <include name="getData"/>
+          <include name="delete"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- TestNG.ContractRegistration.JourneyTypeController -->
+    </classes>
+  </test> <!-- ContractRegistration(failed) -->
+</suite> <!-- Failed suite [Suite de testes] -->

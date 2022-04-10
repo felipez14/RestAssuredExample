@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="89" passed="87">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite de testes" duration-ms="37475" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:49 BRST">
+    <groups>
+    </groups>
+    <test name="ContractRegistration" duration-ms="37475" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:49 BRST">
+      <class name="TestNG.ContractRegistration.ProductController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="create" duration-ms="7" started-at="2021-12-01T13:12:30 BRST" finished-at="2021-12-01T13:12:30 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="findAll" duration-ms="327" started-at="2021-12-01T13:12:30 BRST" depends-on-methods="TestNG.ContractRegistration.ProductController.create" finished-at="2021-12-01T13:12:30 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="findById" duration-ms="287" started-at="2021-12-01T13:12:30 BRST" depends-on-methods="TestNG.ContractRegistration.ProductController.findAll" finished-at="2021-12-01T13:12:30 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="update" duration-ms="369" started-at="2021-12-01T13:12:30 BRST" depends-on-methods="TestNG.ContractRegistration.ProductController.findById" finished-at="2021-12-01T13:12:31 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.ProductController@6a28ffa4]" name="delete" duration-ms="337" started-at="2021-12-01T13:12:31 BRST" depends-on-methods="TestNG.ContractRegistration.ProductController.update" finished-at="2021-12-01T13:12:31 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.ProductController -->
+      <class name="TestNG.ContractRegistration.JourneyTypeController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="create" duration-ms="6" started-at="2021-12-01T13:12:46 BRST" finished-at="2021-12-01T13:12:46 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="findAll" duration-ms="340" started-at="2021-12-01T13:12:47 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyTypeController.create" finished-at="2021-12-01T13:12:47 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="findById" duration-ms="321" started-at="2021-12-01T13:12:47 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyTypeController.findAll" finished-at="2021-12-01T13:12:47 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="update" duration-ms="317" started-at="2021-12-01T13:12:47 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyTypeController.findById" finished-at="2021-12-01T13:12:48 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="FAIL" signature="delete()[pri:0, instance:TestNG.ContractRegistration.JourneyTypeController@7a69b07]" name="delete" duration-ms="341" started-at="2021-12-01T13:12:48 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyTypeController.update" finished-at="2021-12-01T13:12:48 BRST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <204> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <204> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at sun.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at TestNG.ContractRegistration.JourneyTypeController.delete(JourneyTypeController.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.JourneyTypeController -->
+      <class name="TestNG.ContractRegistration.ContractController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:12 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="create" duration-ms="12" started-at="2021-12-01T13:12:34 BRST" finished-at="2021-12-01T13:12:34 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="findAll" duration-ms="317" started-at="2021-12-01T13:12:34 BRST" depends-on-methods="TestNG.ContractRegistration.ContractController.create" finished-at="2021-12-01T13:12:35 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="findById" duration-ms="286" started-at="2021-12-01T13:12:35 BRST" depends-on-methods="TestNG.ContractRegistration.ContractController.findAll" finished-at="2021-12-01T13:12:35 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="update" duration-ms="354" started-at="2021-12-01T13:12:35 BRST" depends-on-methods="TestNG.ContractRegistration.ContractController.findById" finished-at="2021-12-01T13:12:35 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.ContractController@21de60b4]" name="delete" duration-ms="329" started-at="2021-12-01T13:12:35 BRST" depends-on-methods="TestNG.ContractRegistration.ContractController.update" finished-at="2021-12-01T13:12:36 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.ContractController -->
+      <class name="TestNG.ContractRegistration.RangePriceController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.RangePriceController@3f197a46]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.RangePriceController@3f197a46]" name="create" duration-ms="667" started-at="2021-12-01T13:12:48 BRST" finished-at="2021-12-01T13:12:49 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.RangePriceController@3f197a46]" name="delete" duration-ms="327" started-at="2021-12-01T13:12:49 BRST" finished-at="2021-12-01T13:12:49 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.RangePriceController -->
+      <class name="TestNG.ContractRegistration.OfferController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="create" duration-ms="5669" started-at="2021-12-01T13:12:20 BRST" finished-at="2021-12-01T13:12:26 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="findAll" duration-ms="327" started-at="2021-12-01T13:12:26 BRST" depends-on-methods="TestNG.ContractRegistration.OfferController.create" finished-at="2021-12-01T13:12:26 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="findById" duration-ms="350" started-at="2021-12-01T13:12:26 BRST" depends-on-methods="TestNG.ContractRegistration.OfferController.findAll" finished-at="2021-12-01T13:12:26 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="update" duration-ms="696" started-at="2021-12-01T13:12:26 BRST" depends-on-methods="TestNG.ContractRegistration.OfferController.findById" finished-at="2021-12-01T13:12:27 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.OfferController@7e0b85f9]" name="delete" duration-ms="308" started-at="2021-12-01T13:12:27 BRST" depends-on-methods="TestNG.ContractRegistration.OfferController.update" finished-at="2021-12-01T13:12:27 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.OfferController -->
+      <class name="TestNG.ContractRegistration.BusinessUnitController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:12 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="create" duration-ms="666" started-at="2021-12-01T13:12:31 BRST" finished-at="2021-12-01T13:12:32 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="findAll" duration-ms="311" started-at="2021-12-01T13:12:32 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessUnitController.create" finished-at="2021-12-01T13:12:32 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="findById" duration-ms="288" started-at="2021-12-01T13:12:32 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessUnitController.findAll" finished-at="2021-12-01T13:12:32 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="update" duration-ms="367" started-at="2021-12-01T13:12:32 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessUnitController.findById" finished-at="2021-12-01T13:12:33 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.BusinessUnitController@48ae9b55]" name="delete" duration-ms="313" started-at="2021-12-01T13:12:33 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessUnitController.update" finished-at="2021-12-01T13:12:33 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.BusinessUnitController -->
+      <class name="TestNG.ContractRegistration.ExecutionPlanController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="create" duration-ms="8" started-at="2021-12-01T13:12:28 BRST" finished-at="2021-12-01T13:12:28 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="findAll" duration-ms="333" started-at="2021-12-01T13:12:28 BRST" depends-on-methods="TestNG.ContractRegistration.ExecutionPlanController.create" finished-at="2021-12-01T13:12:29 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="findById" duration-ms="346" started-at="2021-12-01T13:12:29 BRST" depends-on-methods="TestNG.ContractRegistration.ExecutionPlanController.findAll" finished-at="2021-12-01T13:12:29 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="update" duration-ms="302" started-at="2021-12-01T13:12:29 BRST" depends-on-methods="TestNG.ContractRegistration.ExecutionPlanController.findById" finished-at="2021-12-01T13:12:29 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.ExecutionPlanController@9353778]" name="delete" duration-ms="310" started-at="2021-12-01T13:12:29 BRST" depends-on-methods="TestNG.ContractRegistration.ExecutionPlanController.update" finished-at="2021-12-01T13:12:30 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.ExecutionPlanController -->
+      <class name="TestNG.ContractRegistration.MenuController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="getData" is-config="true" duration-ms="364" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="create" duration-ms="339" started-at="2021-12-01T13:12:36 BRST" finished-at="2021-12-01T13:12:36 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="findAll" duration-ms="539" started-at="2021-12-01T13:12:36 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.create" finished-at="2021-12-01T13:12:37 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="findById" duration-ms="297" started-at="2021-12-01T13:12:37 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.findAll" finished-at="2021-12-01T13:12:37 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="update" duration-ms="320" started-at="2021-12-01T13:12:37 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.findById" finished-at="2021-12-01T13:12:37 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="deleteTab()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="deleteTab" duration-ms="322" started-at="2021-12-01T13:12:37 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.update" finished-at="2021-12-01T13:12:38 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTab -->
+        <test-method status="PASS" signature="deleteSubMenu()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="deleteSubMenu" duration-ms="297" started-at="2021-12-01T13:12:38 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.deleteTab" finished-at="2021-12-01T13:12:38 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSubMenu -->
+        <test-method status="PASS" signature="deleteMenu()[pri:0, instance:TestNG.ContractRegistration.MenuController@c267ef4]" name="deleteMenu" duration-ms="344" started-at="2021-12-01T13:12:38 BRST" depends-on-methods="TestNG.ContractRegistration.MenuController.deleteSubMenu" finished-at="2021-12-01T13:12:38 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMenu -->
+      </class> <!-- TestNG.ContractRegistration.MenuController -->
+      <class name="TestNG.ContractRegistration.CustomerProductController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="create" duration-ms="20" started-at="2021-12-01T13:12:19 BRST" finished-at="2021-12-01T13:12:19 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="findAll" duration-ms="349" started-at="2021-12-01T13:12:19 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerProductController.create" finished-at="2021-12-01T13:12:19 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="findById" duration-ms="318" started-at="2021-12-01T13:12:19 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerProductController.findAll" finished-at="2021-12-01T13:12:19 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="update" duration-ms="341" started-at="2021-12-01T13:12:19 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerProductController.findById" finished-at="2021-12-01T13:12:20 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.CustomerProductController@6580cfdd]" name="delete" duration-ms="321" started-at="2021-12-01T13:12:20 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerProductController.update" finished-at="2021-12-01T13:12:20 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.CustomerProductController -->
+      <class name="TestNG.ContractRegistration.JourneyStepController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.JourneyStepController@1ddf84b8]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.JourneyStepController@1ddf84b8]" name="create" duration-ms="646" started-at="2021-12-01T13:12:44 BRST" finished-at="2021-12-01T13:12:44 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.JourneyStepController@1ddf84b8]" name="findAll" duration-ms="420" started-at="2021-12-01T13:12:44 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyStepController.create" finished-at="2021-12-01T13:12:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.JourneyStepController@1ddf84b8]" name="findById" duration-ms="290" started-at="2021-12-01T13:12:45 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyStepController.findAll" finished-at="2021-12-01T13:12:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.JourneyStepController@1ddf84b8]" name="delete" duration-ms="307" started-at="2021-12-01T13:12:45 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyStepController.findById" finished-at="2021-12-01T13:12:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.JourneyStepController -->
+      <class name="TestNG.ContractRegistration.AdditionalProductParameterController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="getData" is-config="true" duration-ms="446" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:12 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="create" duration-ms="1463" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:17 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="findAll" duration-ms="314" started-at="2021-12-01T13:12:17 BRST" depends-on-methods="TestNG.ContractRegistration.AdditionalProductParameterController.create" finished-at="2021-12-01T13:12:18 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="findById" duration-ms="363" started-at="2021-12-01T13:12:18 BRST" depends-on-methods="TestNG.ContractRegistration.AdditionalProductParameterController.findAll" finished-at="2021-12-01T13:12:18 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="update" duration-ms="328" started-at="2021-12-01T13:12:18 BRST" depends-on-methods="TestNG.ContractRegistration.AdditionalProductParameterController.findById" finished-at="2021-12-01T13:12:18 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.AdditionalProductParameterController@6a400542]" name="delete" duration-ms="346" started-at="2021-12-01T13:12:18 BRST" depends-on-methods="TestNG.ContractRegistration.AdditionalProductParameterController.update" finished-at="2021-12-01T13:12:19 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.AdditionalProductParameterController -->
+      <class name="TestNG.ContractRegistration.MarketSegmentController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="create" duration-ms="7" started-at="2021-12-01T13:12:40 BRST" finished-at="2021-12-01T13:12:40 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="findAll" duration-ms="307" started-at="2021-12-01T13:12:40 BRST" depends-on-methods="TestNG.ContractRegistration.MarketSegmentController.create" finished-at="2021-12-01T13:12:40 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="findById" duration-ms="305" started-at="2021-12-01T13:12:40 BRST" depends-on-methods="TestNG.ContractRegistration.MarketSegmentController.findAll" finished-at="2021-12-01T13:12:40 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="update" duration-ms="290" started-at="2021-12-01T13:12:40 BRST" depends-on-methods="TestNG.ContractRegistration.MarketSegmentController.findById" finished-at="2021-12-01T13:12:41 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.MarketSegmentController@31d7b7bf]" name="delete" duration-ms="358" started-at="2021-12-01T13:12:41 BRST" depends-on-methods="TestNG.ContractRegistration.MarketSegmentController.update" finished-at="2021-12-01T13:12:41 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.MarketSegmentController -->
+      <class name="TestNG.ContractRegistration.CompanyController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:12 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="create" duration-ms="6" started-at="2021-12-01T13:12:33 BRST" finished-at="2021-12-01T13:12:33 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="findAll" duration-ms="345" started-at="2021-12-01T13:12:33 BRST" depends-on-methods="TestNG.ContractRegistration.CompanyController.create" finished-at="2021-12-01T13:12:33 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="findById" duration-ms="326" started-at="2021-12-01T13:12:33 BRST" depends-on-methods="TestNG.ContractRegistration.CompanyController.findAll" finished-at="2021-12-01T13:12:34 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="update" duration-ms="308" started-at="2021-12-01T13:12:34 BRST" depends-on-methods="TestNG.ContractRegistration.CompanyController.findById" finished-at="2021-12-01T13:12:34 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.CompanyController@1700915]" name="delete" duration-ms="319" started-at="2021-12-01T13:12:34 BRST" depends-on-methods="TestNG.ContractRegistration.CompanyController.update" finished-at="2021-12-01T13:12:34 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.CompanyController -->
+      <class name="TestNG.ContractRegistration.JourneyController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="create" duration-ms="6" started-at="2021-12-01T13:12:45 BRST" finished-at="2021-12-01T13:12:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="findAll" duration-ms="307" started-at="2021-12-01T13:12:45 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyController.create" finished-at="2021-12-01T13:12:45 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="findById" duration-ms="288" started-at="2021-12-01T13:12:45 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyController.findAll" finished-at="2021-12-01T13:12:46 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="update" duration-ms="340" started-at="2021-12-01T13:12:46 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyController.findById" finished-at="2021-12-01T13:12:46 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="FAIL" signature="delete()[pri:0, instance:TestNG.ContractRegistration.JourneyController@1139b2f3]" name="delete" duration-ms="354" started-at="2021-12-01T13:12:46 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyController.update" finished-at="2021-12-01T13:12:46 BRST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <204> but was <500>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <204> but was <500>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.specification.ResponseSpecification$statusCode$2.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at sun.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at TestNG.ContractRegistration.JourneyController.delete(JourneyController.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.JourneyController -->
+      <class name="TestNG.ContractRegistration.CustomerController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="getData" is-config="true" duration-ms="2998" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="create" duration-ms="6" started-at="2021-12-01T13:12:38 BRST" finished-at="2021-12-01T13:12:38 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="findAll" duration-ms="317" started-at="2021-12-01T13:12:38 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerController.create" finished-at="2021-12-01T13:12:39 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="findById" duration-ms="311" started-at="2021-12-01T13:12:39 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerController.findAll" finished-at="2021-12-01T13:12:39 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="update" duration-ms="361" started-at="2021-12-01T13:12:39 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerController.findById" finished-at="2021-12-01T13:12:39 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.CustomerController@30ee2816]" name="delete" duration-ms="303" started-at="2021-12-01T13:12:39 BRST" depends-on-methods="TestNG.ContractRegistration.CustomerController.update" finished-at="2021-12-01T13:12:40 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.CustomerController -->
+      <class name="TestNG.ContractRegistration.OfferTypeController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="create" duration-ms="6" started-at="2021-12-01T13:12:42 BRST" finished-at="2021-12-01T13:12:42 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="findAll" duration-ms="319" started-at="2021-12-01T13:12:42 BRST" depends-on-methods="TestNG.ContractRegistration.OfferTypeController.create" finished-at="2021-12-01T13:12:43 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="findById" duration-ms="326" started-at="2021-12-01T13:12:43 BRST" depends-on-methods="TestNG.ContractRegistration.OfferTypeController.findAll" finished-at="2021-12-01T13:12:43 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="update" duration-ms="279" started-at="2021-12-01T13:12:43 BRST" depends-on-methods="TestNG.ContractRegistration.OfferTypeController.findById" finished-at="2021-12-01T13:12:43 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.OfferTypeController@5c30a9b0]" name="delete" duration-ms="357" started-at="2021-12-01T13:12:43 BRST" depends-on-methods="TestNG.ContractRegistration.OfferTypeController.update" finished-at="2021-12-01T13:12:44 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.OfferTypeController -->
+      <class name="TestNG.ContractRegistration.JourneyPlanController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.JourneyPlanController@63355449]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:15 BRST" finished-at="2021-12-01T13:12:15 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.JourneyPlanController@63355449]" name="create" duration-ms="12" started-at="2021-12-01T13:12:27 BRST" finished-at="2021-12-01T13:12:27 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.JourneyPlanController@63355449]" name="findAll" duration-ms="291" started-at="2021-12-01T13:12:27 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyPlanController.create" finished-at="2021-12-01T13:12:28 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.JourneyPlanController@63355449]" name="findById" duration-ms="337" started-at="2021-12-01T13:12:28 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyPlanController.findAll" finished-at="2021-12-01T13:12:28 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.JourneyPlanController@63355449]" name="delete" duration-ms="323" started-at="2021-12-01T13:12:28 BRST" depends-on-methods="TestNG.ContractRegistration.JourneyPlanController.findById" finished-at="2021-12-01T13:12:28 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.JourneyPlanController -->
+      <class name="TestNG.ContractRegistration.BusinessMarketController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="getData" is-config="true" duration-ms="0" started-at="2021-12-01T13:12:12 BRST" finished-at="2021-12-01T13:12:12 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="create" duration-ms="6" started-at="2021-12-01T13:12:41 BRST" finished-at="2021-12-01T13:12:41 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="findAll()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="findAll" duration-ms="329" started-at="2021-12-01T13:12:41 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessMarketController.create" finished-at="2021-12-01T13:12:41 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="findById" duration-ms="341" started-at="2021-12-01T13:12:41 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessMarketController.findAll" finished-at="2021-12-01T13:12:42 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="update()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="update" duration-ms="362" started-at="2021-12-01T13:12:42 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessMarketController.findById" finished-at="2021-12-01T13:12:42 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.BusinessMarketController@635eaaf1]" name="delete" duration-ms="287" started-at="2021-12-01T13:12:42 BRST" depends-on-methods="TestNG.ContractRegistration.BusinessMarketController.update" finished-at="2021-12-01T13:12:42 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.BusinessMarketController -->
+      <class name="TestNG.ContractRegistration.PriceController">
+        <test-method status="PASS" signature="getData()[pri:0, instance:TestNG.ContractRegistration.PriceController@5e82df6a]" name="getData" is-config="true" duration-ms="1" started-at="2021-12-01T13:12:16 BRST" finished-at="2021-12-01T13:12:16 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="create()[pri:0, instance:TestNG.ContractRegistration.PriceController@5e82df6a]" name="create" duration-ms="318" started-at="2021-12-01T13:12:48 BRST" finished-at="2021-12-01T13:12:48 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create -->
+        <test-method status="PASS" signature="delete()[pri:0, instance:TestNG.ContractRegistration.PriceController@5e82df6a]" name="delete" duration-ms="308" started-at="2021-12-01T13:12:48 BRST" finished-at="2021-12-01T13:12:48 BRST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+      </class> <!-- TestNG.ContractRegistration.PriceController -->
+    </test> <!-- ContractRegistration -->
+  </suite> <!-- Suite de testes -->
+</testng-results>

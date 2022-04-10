@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 89, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.557 s <<< FAILURE! - in TestSuite
+delete(TestNG.ContractRegistration.JourneyController)  Time elapsed: 0.361 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <500>.
+
+	at TestNG.ContractRegistration.JourneyController.delete(JourneyController.java:81)
+
+delete(TestNG.ContractRegistration.JourneyTypeController)  Time elapsed: 0.349 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <500>.
+
+	at TestNG.ContractRegistration.JourneyTypeController.delete(JourneyTypeController.java:77)
+

@@ -1,0 +1,1 @@
+{"uuid":"40de2e3a-e813-42bf-b240-ddbf7ed59c73","name":"DropCollection","children":["ae575412-b997-49e3-a761-4b6a9832143f"],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1643738889710,"stop":1643738889711}],"afters":[],"links":[],"start":1643738889710,"stop":1643738890335}

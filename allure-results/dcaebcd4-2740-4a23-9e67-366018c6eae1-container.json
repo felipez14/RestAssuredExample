@@ -1,0 +1,1 @@
+{"uuid":"dcaebcd4-2740-4a23-9e67-366018c6eae1","name":"IntegrationTest","children":["1cac017b-2688-41c0-9de3-a5203808567c"],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1641839662955,"stop":1641839663333}],"afters":[],"links":[],"start":1641839662924,"stop":1641839667348}

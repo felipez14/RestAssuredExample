@@ -68,9 +68,9 @@ public class UserData {
             RestAssured.baseURI = UserData.ambiente();
 
             Response res = given().
-                    basePath().
+                    basePath(BasePath.getApiPath()).
                     header(Constantes.CONTENT_TYPE, Constantes.APPJSON).
-                    body(()).
+                    body("teste").
                     when().
                     post().
                     then().assertThat().statusCode(200).and().

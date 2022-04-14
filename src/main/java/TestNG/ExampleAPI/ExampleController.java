@@ -1,11 +1,15 @@
-package TestNG.ExampleAPI;
+package testNG.exampleAPI;
 
-import Services.ExampleAPI.ExampleService;
-import files.*;
+import files.BasePath;
+import files.Constantes;
+import files.Resource;
+import files.UserData;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import jsonObjects.PayloadExampleObject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import services.exampleAPI.ExampleService;
 
 import java.io.IOException;
 
@@ -58,12 +62,18 @@ public class ExampleController {
     @Test(dependsOnMethods = "findById")
     public void update() throws IOException {
 
+        PayloadExampleObject payloadExampleObject = new PayloadExampleObject();
+
+        payloadExampleObject.setAge(30);
+        payloadExampleObject.setCar(null);
+        payloadExampleObject.setName("John");
+
         given().
                 basePath(BasePath.getApiPath()).
                 header(Constantes.CONTENT_TYPE, Constantes.APPJSON).
                 header(Constantes.AUTHORIZATION, UserData.accessToken()).
                 pathParam("id", serviceVar).
-                body(Payload.payloadExample()).
+                body(payloadExampleObject).
                 when().
                 put(Resource.getUrlExample()).
                 then().assertThat().statusCode(200).and().

@@ -1,9 +1,13 @@
-package Services.ExampleAPI;
+package services.exampleAPI;
 
-import files.*;
+import files.BasePath;
+import files.Constantes;
+import files.Resource;
+import files.UserData;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import jsons.PayloadExample;
 
 import java.io.IOException;
 
@@ -26,7 +30,7 @@ public class ExampleService {
                     basePath(BasePath.getApiPath()).
                     header(Constantes.CONTENT_TYPE, Constantes.APPJSON).
                     header(Constantes.AUTHORIZATION, UserData.accessToken()).
-                    body(Payload.payloadExample()).
+                    body(PayloadExample.payloadExample()).
                     when().
                     post(Resource.getUrlExample()).
                     then().assertThat().statusCode(201).and().
